@@ -40,8 +40,6 @@ puts students
 
 students[:cohort2] = 42
 
-n = students.values
+n = students.values.inject(:+)
 
-s = n.inject(:+)
-
-puts s
+puts n
